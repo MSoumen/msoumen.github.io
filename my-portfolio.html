@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Material Colors</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+  <script type="text/javascript">
+    var i = 0;
+    var txt = "Hello there, :)";
+    var speed = 250; /* The speed/duration of the effect in milliseconds */
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("summary").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .main {
+      max-width: 1000px;
+      margin: auto;
+      /*box-sizing: border-box;*/
+    }
+    body {
+      background-color: white;
+      /*margin: 5px;*/
+      padding: 25px;
+      font-family: Courier;
+      align-items: center;
+      justify-content: center;
+    }
+    h2 {
+      text-align: center;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 40px;
+      letter-spacing: 0.2em;
+      font-weight: bolder;
+      
+    }
+    p{
+      text-align: justify;
+      font-family: monospace;
+      font-size: 20px;
+      padding-left: 5%;
+      padding-right: 5%;
+      color: rgb(87, 87, 87);
+    }
+
+    p.welcome{
+      color: #000000;
+      text-align: center;
+      font-size: 24px;
+      letter-spacing: 0.2em;
+      font-weight: bold;
+      
+    }
+
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+  
+    img.profile {
+      vertical-align: middle;
+      border-radius: 50%;
+      border: 5px solid;
+      /* border-image:  linear-gradient(to right, grey 25%, yellow 25%, yellow 50%,red 50%, red 75%, teal 75%) 5; */
+      padding: 5px;
+      height: 200px;
+      width: 200px;
+      min-width: 10%;
+      min-height: 10%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .row {
+      margin: 8px -16px;
+    }
+
+    /* Add padding BETWEEN each column (if you want) */
+    .row,
+    .row > .column {
+      padding: 8px;
+    }
+
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 20%;
+    }
+
+    /* Clear floats after rows */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .content {
+      background-color: white;
+      padding: 10px;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 900px) {
+      .column {
+        width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <body onload="typeWriter()">
+    <img src="images/face.gif" class="profile" />
+    <h2>SOUMEN MAHATA</h2>
+    <p class="welcome" id="summary"></p>
+    <p>
+      I am a student of Computer Science and Engineering, with a passion for
+      coding and learning new technologies. I have a strong grasp of the core
+      subjects in my field, such as data structures, algorithms, databases, and
+      programming languages. I enjoy applying my skills to solve various daily
+      life problems through creative and efficient solutions. In my spare time,
+      I like to read Bengali thriller and horror stories, which keep me
+      entertained and intrigued. I am also an amateur MTB cyclist, who loves to
+      explore new trails and challenge myself physically.
+    </p>
+
+    <div class="main">
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column">
+          <div class="content">
+            <a href="https://www.linkedin.com/in/soumen-mahata-46113b119">
+              <img
+                src="https://assets.stickpng.com/images/58e91afdeb97430e81906504.png"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <a href="https://linktr.ee/mahata_s">
+              <img
+                src="https://api.blog.production.linktr.ee/wp-content/uploads/2022/06/Avatar-Symbol-Canopy.png"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <a href="https://www.github.com/MSoumen">
+              <img
+                src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <a href="https://www.linkedin.com/in/soumen-mahata-46113b119">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/HackerRank_logo.png/768px-HackerRank_logo.png"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <a href="https://www.codechef.com/users/msoumen">
+              <img
+                src="https://images.crunchbase.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/zruiknbedz8yqafxbazb"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <a href="https://codeforces.com/profile/MSoumen">
+              <img
+                src="https://apprecs.org/gp/images/app-icons/300/1c/com.innsolutions.codeforcesstats.jpg"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <a href="mailto:mahata.soumen@hotmail.com">
+              <img
+                src="https://www.pngmart.com/files/16/Gmail-PNG-Transparent-Image.png"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <a href="tell:+918695347792">
+              <img
+                src="https://w7.pngwing.com/pngs/915/706/png-transparent-blue-call-icon-dialer-android-google-play-telephone-phone-blue-text-telephone-call-thumbnail.png"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of main div -->
+  </body>
+</html>
+<!-- Created by Soumen -->
